@@ -5,7 +5,7 @@ import { Container } from '@mui/material'
 
 const Couple = () => {
   return (
-    <div style={{padding: '120px 0'}}>
+    <div id="casal" style={{padding: '120px 0'}}>
       <Container>
         <CoupleArea>
           <Text style={{paddingLeft: 0, textAlign: 'right'}}>
@@ -26,6 +26,7 @@ const Couple = () => {
 
         </CoupleArea>
       </Container>
+      <br style={{marginBottom: '100px'}}/>
     </div>
   )
 }

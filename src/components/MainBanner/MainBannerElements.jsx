@@ -1,7 +1,8 @@
 import styled from 'styled-components'
+import theme from '../GlobalStyles'
 
 export const Banner = styled.section` 
-  background: #fff;
+  background: ${theme.color5};
   // height: 1260px;
   display: flex;
   position: relative;
@@ -29,9 +30,9 @@ export const Heading = styled.div`
 `;
 
 export const Title = styled.h2`
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: ${theme.font1};
   font-size: 85px;
-  color: #a3888c;
+  color: ${theme.color1};
   font-weight: 500;
   line-height: 60px;
   margin: 10px 0 35px;
@@ -41,7 +42,7 @@ export const SubTitle = styled.h2`
   font-family: Jost,sans-serif;
   font-weight: 400;
   font-size: 30px;
-  color: #585858;
+  color: ${theme.color3};
   text-transform: uppercase;
 `;
 
@@ -59,24 +60,24 @@ export const TimeContainer = styled.div`
 `;
 
 export const Time = styled.div` 
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: ${theme.font1};
   font-size: 60px;
   line-height: 0.8em;
   padding-top: 15px;
-  color: #585858;
+  color: ${theme.color3};
   font-weight: 300;
 `;
 
 export const TimeText = styled.small` 
   font-family: Jost,sans-serif;
-  color: #585858;
+  color: ${theme.color3};
   font-size: 25px;
 `;
 
 export const Imagem = styled.img` 
   padding: 30px;
   box-shadow: 0 0 6.1px 3.9px rgba(28,31,86,.06);
-  background: #fff;
+  background: ${theme.color5};
   border-radius: 1000px;
   z-index: 1;
   max-width: 640px;

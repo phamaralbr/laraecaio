@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { Link as LinkR } from 'react-router-dom'
 import { Link as LinkS } from 'react-scroll'
+import theme from '../GlobalStyles'
 
 export const Nav = styled.nav`
   background: transparent;
@@ -13,7 +14,7 @@ export const Nav = styled.nav`
   z-index: 10;
 
   &.active {
-    background: #fff;
+    background: ${theme.color5};
     box-shadow: 0 1px 5px rgba(0,0,0,.1);
   }
 
@@ -32,14 +33,15 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled(LinkR)`
-  color: #a3888c;
+  color: ${theme.color1};
+  font-family: ${theme.font1};
   justify-self: flex-start;
   cursor: pointer;
-  font-size: 2.5rem;
+  font-size: 2rem;
   display: flex;
   align-items: center;
   margin-left: 24px;
-  font-weight: bold;
+  font-weight: 300;
   text-decoration: none;
 `;
 
@@ -54,7 +56,7 @@ export const MobileIcon= styled.div`
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: #a3888c
+    color: ${theme.color1};
   }
 `;
 
@@ -75,23 +77,30 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled (LinkS)` 
-  color: #002642; 
+  color: ${theme.color2}; 
   font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
-  padding: 50px 20px;
+  padding: 40px 20px;
   display: flex; 
   align-items: center; 
   text-decoration: none; 
   cursor: pointer;
 
   border-bottom: 3px solid transparent;
+  border-top: 3px solid transparent;
   transition: border-bottom 0.2s;
 
-  &:hover {
-    color: #a3888c;
+  &.active {
+    color: ${theme.color1};
     text-decoration: none;
-    border-bottom: 3px solid #a3888c;
+    border-bottom: 3px solid ${theme.color1};
+  }
+
+  &:hover {
+    color: ${theme.color1};
+    text-decoration: none;
+    border-bottom: 3px solid ${theme.color1};
   }
 `;
 
@@ -106,12 +115,12 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled (LinkR)`
   border-radius: 50px;
-  background: #a3888c;
+  background: ${theme.color1};
   font-weight: 600;
   white-space: nowrap; 
   padding: 15px 45px; 
   text-transform: uppercase;
-  color: #fff;
+  color: ${theme.color5};
   font-size: 16px;
   outline: none;
   border: none;

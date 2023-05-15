@@ -17,7 +17,7 @@ const MainBanner = () => {
   const [days, hours, minutes, seconds] = useCountdown(new Date(ano ,mes -1, dia, hora, minuto));
 
   return (
-    <Banner>
+    <Banner id="home"> 
       <BannerContainer>
         <Heading>
           <img src={FancyShape} alt="Fancy Shape" style={{paddingBottom: '80px', width: 'fit-content'}} />

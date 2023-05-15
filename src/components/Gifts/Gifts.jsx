@@ -2,6 +2,7 @@ import React from 'react'
 import { Container, Grid } from '@mui/material'
 import Product from './Product'
 import MainLabel from '../MainLabel/MainLabel'
+import './Gifts.css'
 
 const Gifts = () => {
   const products = [
@@ -17,19 +18,18 @@ const Gifts = () => {
     {name: 'Faqueiro Inox Tramontina 130 Peças', price: '3.599,90', image: 'faqueiro.png'},
   ]
   return (
-    <div>
+    <div id="presentes">
       <MainLabel label='Presentes'/>
       <Container>
-        <Grid container spacing='1'>
+        <Grid className="Grid" container spacing={3} rowSpacing={8}>
           {products.map((product, index) => (
-            <Grid item xs key={index}>
-              <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                <Product name={product.name} price={product.price} image={product.image}/>
-              </div>
+            <Grid item key={index}>
+              <Product name={product.name} price={product.price} image={product.image}/>
             </Grid>
           ))}
         </Grid>
       </Container>
+      <br style={{marginBottom: '200px'}}/>
     </div>
   )
 }

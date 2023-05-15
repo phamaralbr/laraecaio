@@ -1,0 +1,9 @@
+.Grid {
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 700px) {
+  .Grid {
+    justify-content: space-evenly;
+  }
+}

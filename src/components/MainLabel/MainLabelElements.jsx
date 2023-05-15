@@ -1,11 +1,12 @@
 import styled from 'styled-components'
+import theme from '../GlobalStyles'
 
 export const Label = styled.div`
   font-size: 45px;
   line-height: 55px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: ${theme.font1};
   font-weight: 400;
-  color: #a3888c;
+  color: ${theme.color1};
   display: inline-block;
   padding-bottom: 20px;
   position: relative;
@@ -19,7 +20,7 @@ export const Label = styled.div`
     width: 70%;
     height: 1px;
     content: "";
-    background: #e7e7e7;
+    background: ${theme.color7};
   }
 
   &:after{
@@ -29,7 +30,7 @@ export const Label = styled.div`
     width: 120%;
     height: 1px;
     content: "";
-    background: #e7e7e7;
+    background: ${theme.color7};
     left: -10%;
   }
 `;

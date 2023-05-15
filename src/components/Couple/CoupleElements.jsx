@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import theme from '../GlobalStyles'
 
 export const Container = styled.div`
   // width: 100%;
@@ -17,7 +18,7 @@ export const Container = styled.div`
 `;
 
 export const CoupleArea = styled.div`
-  background: #fbf8f8;
+  background: ${theme.color4};
   height: 345px;
   display: flex;
   align-items: center;
@@ -35,7 +36,7 @@ export const Imagem = styled.div`
 export const Moldura = styled.div`
   padding: 20px;
   box-shadow: rgba(28, 31, 86, 0.06) 0px 0px 6.1px 3.9px;
-  background: rgb(255, 255, 255);
+  background: ${theme.color5};
   border-radius: 235px;
 `;
 
@@ -48,14 +49,14 @@ export const Name = styled.h3`
   font-size: 2rem;
   margin: 0 0 .6em;
   font-weight: 300;
-  color: #002642;
-  font-family: 'Josefin Sans', sans-serif;
+  color: ${theme.color2};
+  font-family: ${theme.font1};
 `;
 
 export const Description = styled.p`
   margin-top: 0;
   margin-bottom: 10px;
   font-size: 16px;
-  color: #848892;
+  color: ${theme.color6};
   line-height: 1.8em;
 `;
