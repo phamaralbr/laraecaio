@@ -1,9 +1,7 @@
 .Grid {
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 45px;
+  column-gap: 25px;
 }
 
-@media only screen and (max-width: 700px) {
-  .Grid {
-    justify-content: space-evenly;
-  }
-}

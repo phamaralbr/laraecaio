@@ -1,7 +1,8 @@
 import React from 'react'
-import { Container, Grid } from '@mui/material'
+import { Container } from '@mui/material'
 import Product from './Product'
 import MainLabel from '../MainLabel/MainLabel'
+import { Grid } from './GiftsElements'
 import './Gifts.css'
 
 const Gifts = () => {
@@ -21,11 +22,9 @@ const Gifts = () => {
     <div id="presentes">
       <MainLabel label='Presentes'/>
       <Container>
-        <Grid className="Grid" container spacing={3} rowSpacing={8}>
+        <Grid>
           {products.map((product, index) => (
-            <Grid item key={index}>
-              <Product name={product.name} price={product.price} image={product.image}/>
-            </Grid>
+              <Product key={index} name={product.name} price={product.price} image={product.image}/>
           ))}
         </Grid>
       </Container>

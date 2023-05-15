@@ -43,6 +43,7 @@ export const NavLogo = styled(LinkR)`
   margin-left: 24px;
   font-weight: 300;
   text-decoration: none;
+  white-space: nowrap
 `;
 
 export const MobileIcon= styled.div` 
@@ -50,10 +51,13 @@ export const MobileIcon= styled.div`
 
   @media screen and (max-width: 768px) {
     display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
+    // position: absolute;
+    // top: 0;
+    // right: 0;
+    // transform: translate(-100%, 60%);
+    align-items: center;
+    display: flex;
+    padding 20px;
     font-size: 1.8rem;
     cursor: pointer;
     color: ${theme.color1};

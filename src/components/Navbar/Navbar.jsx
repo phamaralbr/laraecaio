@@ -40,9 +40,6 @@ const Navbar = ({toggle}) => {
               <NavItem><NavLinks to="presentes" smooth={true} duration={500} spy={true} exact='true' offset={-110}>Presentes</NavLinks></NavItem>
             </NavMenu>
 
-            {/* <NavBtn>
-              <NavBtnLink to="/signin">Presença</NavBtnLink>
-            </NavBtn> */}
           </div>
           
 

@@ -4,7 +4,7 @@ import theme from '../GlobalStyles'
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  width: 200px;
+  min-width: 200px;
   height: 100%;
 `;
 
@@ -13,7 +13,7 @@ export const Background = styled.div`
   box-sizing: border-box;
   overflow: hidden;
   position: relative;
-  width: 200px;
+  // width: 200px;
   height: 210px;
   border-radius: 8px;
   padding: 40px 20px 10px 20px;
