@@ -1,6 +1,7 @@
 import React from 'react'
-import { Container, CoupleArea, Imagem, Moldura, Text, Name, Description } from './CoupleElements'
+import { CoupleArea, Imagem, Moldura, Text, Name, Description } from './CoupleElements'
 import FotoCasal from '../../assets/foto-casal.png'
+import { Container } from '@mui/material'
 
 const Couple = () => {
   return (
