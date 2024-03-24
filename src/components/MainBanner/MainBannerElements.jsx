@@ -11,22 +11,40 @@ export const Banner = styled.section`
 
 export const BannerContainer = styled.div` 
   width: 100%;
-  height: 100%;
+  // height: 100%;
   // position: absolute;
   // left: 0;
   // top: 0;
-  display: flex;
+  // display: flex;
   margin-top: 50px;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: normal;
+  align-items: normal;
+  align-content: normal;
+
+  @media only screen and (min-width: 768px) {
+    flex-direction: row;
+  }
 `;
 
 export const Heading = styled.div` 
-  flex: 1;
-  padding-left: 10%;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 966px;
+  // flex: 1;
+  padding-left: 10vw;
+  // width: 50%;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // height: 966px;
+
+  display: block;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
 `;
 
 export const Title = styled.h2`
@@ -46,8 +64,28 @@ export const SubTitle = styled.h2`
   text-transform: uppercase;
 `;
 
+
+export const CoupleContainer = styled.div` 
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+`;
+
 export const Couple = styled.div` 
-  width: 50%;
+  // width: 50%;
+
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+
+  justify-content: center;
+
+  @media only screen and (max-width: 768px) {
+    padding: 20%;
+  }
 `;
 
 export const Countdown = styled.div` 
@@ -81,19 +119,23 @@ export const Imagem = styled.img`
   border-radius: 1000px;
   z-index: 1;
   max-width: 640px;
+
+  width: 100%;
 `;
 
 export const LeavesBottom = styled.img` 
   position: absolute;
-  left: -100px;
-  bottom: -185px;
+  left: -10%;
+  bottom: -20%;
   z-index: -1;
+  width: 80%;
 `;
 
 export const LeavesTop = styled.img` 
-  position: absolute;
-  right: -200px;
-  top: -40px;
-  z-index: -1;
+position: absolute;
+right: -30%;
+top: -10%;
+z-index: -1;
+width: 50%;
 `;
 

@@ -1,9 +1,15 @@
 import React from 'react'
+import { useState } from 'react'
 import { Background, Title, Price, Container, Botao, Gif } from './ProductElements'
 import { MdPix } from 'react-icons/md';
 import DancingGirl from '../../assets/dancing-girl.gif'
+import Modal from '../Modal/Modal'
 
 const Product = ({name, price, image}) => {
+
+  const [openModal, setOpenModal] = useState(false)
+
+
   return (
     <Container>
       {/* <div style={{width: '200px', height: '210px'}}> */}
@@ -24,9 +30,12 @@ const Product = ({name, price, image}) => {
         }
         {price}
       </Price>
-      <Botao>
+      <Botao onClick={() => setOpenModal(true)}>
         Comprar
       </Botao>
+      <Modal isOpen={openModal} setModalOpen={() => setOpenModal(!openModal)}>
+        Conteúdo do modal
+      </Modal>
     </Container>
   )
 }
