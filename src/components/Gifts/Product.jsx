@@ -32,7 +32,7 @@ const Product = ({name, price, image}) => {
         <Background>
           {image == 'pix' 
           ? <MdPix style={{width: '100%', height: '100%', color: '#a3888c'}}/>
-          : <img src={'./assets/Products/' + image} alt="Produto" style={{maxWidth: '100%', maxHeight: '100%'}}/>
+          : <img src={'../../assets/Products/' + image} alt="Produto" style={{maxWidth: '100%', maxHeight: '100%'}}/>
           }
 
           {image == 'pix' && <Gif src={DancingGirl} alt="Dancing girl GIF" />}
