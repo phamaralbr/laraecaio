@@ -32,7 +32,7 @@ const Product = ({name, price, image}) => {
         <Background>
           {image == 'pix' 
           ? <MdPix style={{width: '100%', height: '100%', color: '#a3888c'}}/>
-          : <img src={'../../assets/Products/' + image} alt="Produto" style={{maxWidth: '100%', maxHeight: '100%'}}/>
+          : <img src={'/laraecaio/Products/' + image} alt="Produto" style={{width: 'auto', height: 'auto'}}/>
           }
 
           {image == 'pix' && <Gif src={DancingGirl} alt="Dancing girl GIF" />}
@@ -44,14 +44,14 @@ const Product = ({name, price, image}) => {
         ? ''
         : 'R$ '
         }
-        {price}
+        {price.toLocaleString('pt-BR', {minimumFractionDigits: 2, maximumFractionDigits: 2 })}
       </Price>
       <Botao onClick={() => setOpenModal(true)}>
-        Comprar
+        Presentear
       </Botao>
       <Modal isOpen={openModal} setModalOpen={() => setOpenModal(!openModal)}>
         <ModalContainer>
-          <ModalPrice>R$ {price}</ModalPrice>
+          <ModalPrice>R$ {price.toLocaleString('pt-BR', {minimumFractionDigits: 2, maximumFractionDigits: 2 })}</ModalPrice>
 
           <ModalText>Use o QR Code do Pix para nos presentear</ModalText>
           <div style={{justifyContent: 'center', display: 'flex'}}>

@@ -20,7 +20,7 @@ const MainBanner = () => {
     <Banner id="home"> 
       <BannerContainer>
         <Heading>
-          <img src={FancyShape} alt="Fancy Shape" style={{paddingBottom: '80px', width: 'fit-content'}} />
+          {/* <img src={FancyShape} alt="Fancy Shape" style={{paddingBottom: '80px', width: 'fit-content'}} /> */}
           <Title>Lara & Caio</Title>
           <SubTitle>VAMOS NOS CASAR {dia} de Julho, {ano}</SubTitle>
           <Countdown>
@@ -41,7 +41,7 @@ const MainBanner = () => {
               <TimeText>Seg</TimeText>
             </TimeContainer>
           </Countdown>
-          <img src={FancyShapeUpsideDown} alt="Fancy Shape" style={{paddingTop: '80px', width: 'fit-content'}} />
+          {/* <img src={FancyShapeUpsideDown} alt="Fancy Shape" style={{paddingTop: '80px', width: 'fit-content'}} /> */}
         </Heading>
         <Couple>
           <CoupleContainer>

@@ -18,8 +18,8 @@ const Home = () => {
     <>
       <Sidebar isOpen={isOpen} toggle={toggle}/>
       <Navbar toggle={toggle}/>
-      {/* <MainBanner/> */}
-      <br style={{marginBottom: '200px'}}/>
+      <MainBanner/>
+      <br style={{marginBottom: '10%'}}/>
       {/* <Couple/> */}
       <Gifts/>
     </>

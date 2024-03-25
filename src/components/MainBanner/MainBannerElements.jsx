@@ -34,12 +34,15 @@ export const Heading = styled.div`
   // flex: 1;
   padding-left: 10vw;
   // width: 50%;
-  // display: flex;
+  display: flex;
   // flex-direction: column;
   // justify-content: center;
   // height: 966px;
 
-  display: block;
+  justify-content: center;
+  flex-direction: column;
+
+  // display: block;
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: auto;
@@ -49,7 +52,7 @@ export const Heading = styled.div`
 
 export const Title = styled.h2`
   font-family: ${theme.font1};
-  font-size: 85px;
+  font-size: var(--fontXL);
   color: ${theme.color1};
   font-weight: 500;
   line-height: 60px;
@@ -59,7 +62,7 @@ export const Title = styled.h2`
 export const SubTitle = styled.h2`
   font-family: Jost,sans-serif;
   font-weight: 400;
-  font-size: 30px;
+  font-size: var(--font600);
   color: ${theme.color3};
   text-transform: uppercase;
 `;
@@ -69,6 +72,10 @@ export const CoupleContainer = styled.div`
   position: relative;
   width: fit-content;
   height: fit-content;
+
+  justify-content: center;
+  display: flex;
+  align-items: center;
 `;
 
 export const Couple = styled.div` 
@@ -94,12 +101,12 @@ export const Countdown = styled.div`
 `;
 
 export const TimeContainer = styled.div` 
-  padding-right: 60px;
+  padding-right: 10%;
 `;
 
 export const Time = styled.div` 
   font-family: ${theme.font1};
-  font-size: 60px;
+  font-size: var(--fontLG);
   line-height: 0.8em;
   padding-top: 15px;
   color: ${theme.color3};
@@ -109,11 +116,11 @@ export const Time = styled.div`
 export const TimeText = styled.small` 
   font-family: Jost,sans-serif;
   color: ${theme.color3};
-  font-size: 25px;
+  font-size: var(--font600);
 `;
 
 export const Imagem = styled.img` 
-  padding: 30px;
+  padding: 3%;
   box-shadow: 0 0 6.1px 3.9px rgba(28,31,86,.06);
   background: ${theme.color5};
   border-radius: 1000px;
@@ -133,7 +140,7 @@ export const LeavesBottom = styled.img`
 
 export const LeavesTop = styled.img` 
 position: absolute;
-right: -30%;
+right: -20%;
 top: -10%;
 z-index: -1;
 width: 50%;

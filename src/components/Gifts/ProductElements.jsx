@@ -39,11 +39,11 @@ export const Background = styled.div`
 export const Title = styled.h2`
   font-family: ${theme.font1};
   font-weight: 400;
-  font-size: 22px;
+  font-size: var(--font500);
   line-height: 1.3em;
   margin-bottom: 5px;
   color: ${theme.color3};
-  height: 58px;
+  // height: 58px;
 
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -61,14 +61,14 @@ export const Title = styled.h2`
 export const Price = styled.p`
   // font-family: ${theme.font1};
   color: ${theme.color1};;
-  font-size: 24px;
+  font-size: var(--font600);
   font-weight: 400;
   margin-top: 0
 `;
 
 export const Botao = styled.button`
   width: 100%;
-  font-size: 18px;
+  font-size: var(--font400);
   font-weight: 700;
   background: #cfb8bb;
   color: white;
@@ -103,7 +103,7 @@ export const ModalPrice = styled.p`
   // font-family: ${theme.font1};
   color: ${theme.color1};
 
-  font-size: 40px;
+  font-size: var(--fontL);
   font-weight: 400;
   margin-top: 0;
   margin-bottom: 0;
@@ -113,8 +113,8 @@ export const ModalPrice = styled.p`
 export const ModalText = styled.h2`
   font-family: ${theme.font1};
   font-weight: 400;
-  font-size: 22px;
-  line-height: 1.3em;
+  font-size: var(--font500);
+  // line-height: 1.3em;
   margin-bottom: 20px;
   color: ${theme.color3};
   // height: 58px;
@@ -123,8 +123,8 @@ export const ModalText = styled.h2`
 export const ModalText1 = styled.h2`
   font-family: ${theme.font1};
   font-weight: 400;
-  font-size: 20px;
-  line-height: 1.3em;
+  font-size: var(--font400);
+  // line-height: 1.3em;
   margin-top: 50px;
   margin-bottom: 0px;
   color: ${theme.color8};
@@ -135,8 +135,8 @@ export const ModalText1 = styled.h2`
 export const ModalText2 = styled.h2`
   font-family: ${theme.font1};
   font-weight: 400;
-  font-size: 20px;
-  line-height: 1.3em;
+  font-size: var(--font400);
+  // line-height: 1.3em;
   margin-top: 10px;
   margin-bottom: 20px;
   color: ${theme.color8};
