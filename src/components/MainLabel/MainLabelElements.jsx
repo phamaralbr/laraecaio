@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import theme from '../GlobalStyles'
 
 export const Label = styled.div`
-  font-size: 45px;
+  font-size: var(--fontLG);
   line-height: 55px;
   font-family: ${theme.font1};
   font-weight: 400;

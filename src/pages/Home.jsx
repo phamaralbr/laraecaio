@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar/Navbar'
 import MainBanner from '../components/MainBanner/MainBanner'
 import Couple from '../components/Couple/Couple'
 import Gifts from '../components/Gifts/Gifts'
+import Confirmacoes from '../components/Confirmacoes/Confirmacoes'
 
 // https://preview.themeforest.net/item/feelings-wedding-wedding-planner-next-js-template/full_screen_preview/43569960
 
@@ -21,6 +22,7 @@ const Home = () => {
       <MainBanner/>
       <br style={{marginBottom: '10%'}}/>
       {/* <Couple/> */}
+      <Confirmacoes/>
       <Gifts/>
     </>
   )
