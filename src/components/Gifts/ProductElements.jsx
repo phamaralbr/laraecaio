@@ -120,6 +120,29 @@ export const ModalText = styled.h2`
   // height: 58px;
 `;
 
+export const ModalText1 = styled.h2`
+  font-family: ${theme.font1};
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.3em;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  color: ${theme.color8};
+  text-align: center;
+  // height: 58px;
+`;
+
+export const ModalText2 = styled.h2`
+  font-family: ${theme.font1};
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.3em;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: ${theme.color8};
+  text-align: center;
+`;
+
 export const ModalContainer = styled.div`
   display: flex;
   flex-direction: column;

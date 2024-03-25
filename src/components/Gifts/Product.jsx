@@ -1,6 +1,6 @@
 // import React from 'react'
 import { useState } from 'react'
-import { Background, Title, Price, Container, Botao, Gif, ModalPrice, ModalContainer, ModalText} from './ProductElements'
+import { Background, Title, Price, Container, Botao, Gif, ModalPrice, ModalContainer, ModalText, ModalText1, ModalText2} from './ProductElements'
 import { MdPix } from 'react-icons/md';
 import DancingGirl from '../../assets/dancing-girl.gif'
 import Modal from '../Modal/Modal'
@@ -53,7 +53,7 @@ const Product = ({name, price, image}) => {
         <ModalContainer>
           <ModalPrice>R$ {price}</ModalPrice>
 
-          <ModalText>Use o QR Code do Pix para pagar</ModalText>
+          <ModalText>Use o QR Code do Pix para nos presentear</ModalText>
           <div style={{justifyContent: 'center', display: 'flex'}}>
             <PIX
               pixkey="amaral.ph.m@gmail.com"
@@ -72,6 +72,12 @@ const Product = ({name, price, image}) => {
           <Botao style={{marginTop: "20px"}} onClick={() => handleClipboardClick()}>
             {buttonText}
           </Botao>
+
+          <ModalText1>Se preferir nossas chaves PIX:</ModalText1>
+          <ModalText2>
+            Lara: 000.000.000.00<br/>
+            Caio: 000.000.000.00
+          </ModalText2>
         </ModalContainer>
       </Modal>
     </Container>

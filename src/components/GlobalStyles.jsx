@@ -6,7 +6,7 @@ export const theme = {
   color5: '#fff',
   color6: '#848892',
   color7: '#e7e7e7',
-  color8: '#846a6e',
+  color8: '#777777',
   font1: "'Josefin Sans', sans-serif",
 };
 
