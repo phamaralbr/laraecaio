@@ -16,10 +16,11 @@ const MODAL_STYLE = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%,-50%)',
-  padding: '150px',
+  padding: '70px',
   backgroundColor: '#fff',
   borderRadius: '8px',
   color: 'black',
+  // maxWidth: '90vw'
 }
 
 const closeBtn = {
@@ -27,14 +28,14 @@ const closeBtn = {
   right: '10px',
   cursor: 'pointer',
   position: 'absolute',
-  width: '20px',
-  height: '20px',
+  width: '40px',
+  height: '40px',
   justifyContent: 'center',
   display: 'flex',
   alignItems: 'center',
   color: theme.color1,
   fontFamily: theme.font1,
-  fontSize: '20px',
+  fontSize: '24px',
   backgroundColor: theme.color4,
   borderRadius: '100px',
 }
@@ -50,7 +51,7 @@ export default function Modal({ isOpen, setModalOpen, children }) {
       <div style={BACKGROUND_STYLE} onClick={setModalOpen}>
         <div style={MODAL_STYLE} onClick={handleChildClick}>
           <div style={closeBtn} onClick={setModalOpen}>
-            x
+          &#x2715;
           </div>
           <div>{children}</div>
           {/* <button onClick={setModalOpen}>Fechar</button> */}

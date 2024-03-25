@@ -1,13 +1,29 @@
-import React from 'react'
+// import React from 'react'
 import { useState } from 'react'
-import { Background, Title, Price, Container, Botao, Gif } from './ProductElements'
+import { Background, Title, Price, Container, Botao, Gif, ModalPrice, ModalContainer, ModalText} from './ProductElements'
 import { MdPix } from 'react-icons/md';
 import DancingGirl from '../../assets/dancing-girl.gif'
 import Modal from '../Modal/Modal'
+import PIX from "react-qrcode-pix";
+import theme from '../GlobalStyles'
+
 
 const Product = ({name, price, image}) => {
 
   const [openModal, setOpenModal] = useState(false)
+
+  const [pixCode, setPixCode] = useState("");
+  const [buttonText, setButtonText] = useState('Copiar código do QR Code');
+
+  function handleClipboardClick() {
+    navigator.clipboard.writeText(pixCode);
+    let origText = 'Copiar código do QR Code';
+    setButtonText("Copiado!");
+    setTimeout(() => {
+      setButtonText(origText);
+    }, 2000);
+  }
+
 
 
   return (
@@ -34,7 +50,29 @@ const Product = ({name, price, image}) => {
         Comprar
       </Botao>
       <Modal isOpen={openModal} setModalOpen={() => setOpenModal(!openModal)}>
-        Conteúdo do modal
+        <ModalContainer>
+          <ModalPrice>R$ {price}</ModalPrice>
+
+          <ModalText>Use o QR Code do Pix para pagar</ModalText>
+          <div style={{justifyContent: 'center', display: 'flex'}}>
+            <PIX
+              pixkey="amaral.ph.m@gmail.com"
+              merchant="Pedro Henrique Medeiros Amaral"
+              city="BRASILIA"
+              cep="71680369"
+              // code={name}
+              amount={price}
+              onLoad={setPixCode}
+              padding={30}
+              color={theme.color3}
+              bgColor={theme.color4}
+              bgRounded
+            />
+          </div>
+          <Botao style={{marginTop: "20px"}} onClick={() => handleClipboardClick()}>
+            {buttonText}
+          </Botao>
+        </ModalContainer>
       </Modal>
     </Container>
   )

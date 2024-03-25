@@ -6,6 +6,10 @@ export const Container = styled.div`
   flex-direction: column;
   min-width: 200px;
   height: 100%;
+
+  @media only screen and (max-width: 456px) {
+    min-width: 150px;
+  }
 `;
 
 export const Background = styled.div`
@@ -25,6 +29,10 @@ export const Background = styled.div`
 
   ${Container}:hover &{
     box-shadow: 0 5px 15px  rgba(163, 136, 140, 0.3);
+  }
+
+  @media only screen and (max-width: 456px) {
+    height: 180px;
   }
 `;
 
@@ -89,4 +97,30 @@ export const Gif = styled.img`
   ${Container}:hover &{
     display: block;
   }
+`;
+
+export const ModalPrice = styled.p`
+  // font-family: ${theme.font1};
+  color: ${theme.color1};
+
+  font-size: 40px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+`;
+
+export const ModalText = styled.h2`
+  font-family: ${theme.font1};
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.3em;
+  margin-bottom: 20px;
+  color: ${theme.color3};
+  // height: 58px;
+`;
+
+export const ModalContainer = styled.div`
+  display: flex;
+  flex-direction: column;
 `;

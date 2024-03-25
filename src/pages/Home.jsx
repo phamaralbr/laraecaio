@@ -18,9 +18,9 @@ const Home = () => {
     <>
       <Sidebar isOpen={isOpen} toggle={toggle}/>
       <Navbar toggle={toggle}/>
-      <MainBanner/>
+      {/* <MainBanner/> */}
       <br style={{marginBottom: '200px'}}/>
-      <Couple/>
+      {/* <Couple/> */}
       <Gifts/>
     </>
   )
